@@ -127,7 +127,7 @@ h4 {
   font-size: var(--fs-normal-0);
   font-family: var(--ff-body);
   font-weight: 300;
-  letter-spacing: .5px;
+  letter-spacing: 1px;
 }
 .nav__links {
   display: flex;
@@ -142,14 +142,14 @@ h4 {
 
 .nav__links li {
   font-family: var(--ff-primary);
-  font-size: var(--fs-small);
+  font-size: var(--fs-small-1);
   font-weight: 400;
   color: var(--primary-clr);
   transition: all 0.15s;
   padding-bottom: 0.25em;
   cursor: pointer;
-  position: relative;  
-  letter-spacing: .8px;
+  position: relative;
+  letter-spacing: 0.8px;
 }
 .nav__links li:hover {
   color: var(--link-clr);
