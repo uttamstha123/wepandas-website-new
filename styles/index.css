@@ -12,6 +12,7 @@
 
   /***** Fonts *****/
   --ff-primary: "Helvetica Now Text", Helvetica;
+  --ff-body: "Helvetica Now Display", Helvetica;
   --ff-secondary: "Source Sans Pro", sans-serif;
 
   /***** Font Size *****/
@@ -125,7 +126,9 @@ h4 {
 .logo {
   text-transform: uppercase;
   font-size: var(--fs-normal-0);
-  font-weight: 400;
+  font-family: var(--ff-body);
+  font-weight: 300;
+  letter-spacing: .5px;
 }
 .nav__links {
   display: flex;
@@ -146,7 +149,7 @@ h4 {
   position: relative;
   font-size: var(--fs-small);
   font-weight: 400;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 .nav__links li:hover {
   color: var(--link-clr);

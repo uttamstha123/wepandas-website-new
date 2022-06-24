@@ -12,6 +12,7 @@
 
 .section-content {
   max-width: 50%;
+  margin-left: 5rem;
 }
 .section-title {
   color: var(--accent-clr);

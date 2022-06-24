@@ -1,30 +1,30 @@
 @font-face {
   font-family: Helvetica Now Text;
-  src: url("../assets/fonts/Helvetica/HelveticaNowText-ExtraLight.otf");
+  src: url("../assets/fonts/HelveticaText/HelveticaNowText-ExtraLight.otf");
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
   font-family: Helvetica Now Text;
-  src: url("../assets/fonts/Helvetica/HelveticaNowText-Light.otf");
+  src: url("../assets/fonts/HelveticaText/HelveticaNowText-Light.otf");
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: Helvetica Now Text;
-  src: url("../assets/fonts/Helvetica/HelveticaNowText-Medium.otf");
+  src: url("../assets/fonts/HelveticaText/HelveticaNowText-Medium.otf");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: Helvetica Now Text;
-  src: url("../assets/fonts/Helvetica/HelveticaNowText-Regular.otf");
+  src: url("../assets/fonts/HelveticaText/HelveticaNowText-Regular.otf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: Helvetica Now Text;
-  src: url("../assets/fonts/Helvetica/HelveticaNowText-Bold.otf");
+  src: url("../assets/fonts/HelveticaText/HelveticaNowText-Bold.otf");
   font-weight: 500;
   font-style: normal;
 }
@@ -32,6 +32,49 @@
 @font-face {
   font-family: Helvetica Now Text;
   src: url("../assets/fonts/Helvetica/HelveticaNowText-BoldItalic.otf");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/*
+*******
+  Helvetica Display
+********
+*/
+@font-face {
+  font-family: Helvetica Now Display;
+  src: url("../assets/fonts/HelveticaDisplay/HelveticaNowDisplay-Thin.otf");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: Helvetica Now Display;
+  src: url("../assets/fonts/HelveticaDisplay/HelveticaNowDisplay-Light.otf");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: Helvetica Now Display;
+  src: url("../assets/fonts/HelveticaDisplay/HelveticaNowDisplay-Regular.otf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Helvetica Now Display;
+  src: url("../assets/fonts/HelveticaDisplay/HelveticaNowDisplay-Medium.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Helvetica Now Display;
+  src: url("../assets/fonts/HelveticaDisplay/HelveticaNowDisplay-Bold.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Helvetica Now Display;
+  src: url("../assets/fonts/HelveticaDisplay/HelveticaNowDisplay-BoldIta.otf");
   font-weight: 500;
   font-style: italic;
 }
