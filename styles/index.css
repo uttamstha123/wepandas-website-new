@@ -146,7 +146,7 @@ h4 {
   position: relative;
   font-size: var(--fs-small);
   font-weight: 400;
-  letter-spacing: 2%;
+  letter-spacing: .5px;
 }
 .nav__links li:hover {
   color: var(--link-clr);
