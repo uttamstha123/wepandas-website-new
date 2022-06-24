@@ -1,6 +1,6 @@
 .section-wrapper {
   height: 90vh;
-  font-family: var(--ff-primary);
+  font-family: var(--ff-body);
 }
 .section-wrapper > div {
   justify-content: space-between;
@@ -11,7 +11,7 @@
 }
 
 .section-content {
-  max-width: 50%;
+  max-width: 45%;
   margin-left: 5rem;
 }
 .section-title {
@@ -22,7 +22,7 @@
 
 .section-subtitle {
   font-size: var(--fs-small);
-  letter-spacing: 0.5px;
+  letter-spacing: .8px;
   font-weight: 500;
   background: var(--non-accent-clr);
   max-width: max-content;
@@ -31,12 +31,12 @@
 }
 .section-info {
   font-size: var(--fs-small-1);
-  font-weight: 400;
+  font-weight: 300;
   color: var(--subtitle-clr);
   line-height: 165%;
 }
 .section-info > p {
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
   margin-top: 2.5em;
 }
 .section-img {
