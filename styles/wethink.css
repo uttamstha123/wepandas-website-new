@@ -16,24 +16,27 @@
 .section-title {
   color: var(--accent-clr);
   font-weight: 500;
-  font-size: var(--fs-large);
+  font-size: var(--fs-large-1);
 }
 
 .section-subtitle {
-  font-size: var(--fs-normal-0);
-  font-weight: 300;
+  font-size: var(--fs-small);
+  letter-spacing: 0.5px;
+  font-weight: 500;
   background: var(--non-accent-clr);
   max-width: max-content;
   padding: 0.6em 1em;
   margin-top: 1em;
 }
 .section-info {
-  font-size: var(--fs-normal-1);
-  font-weight: 200;
+  font-size: var(--fs-small-1);
+  font-weight: 400;
+  color: var(--subtitle-clr);
+  line-height: 165%;
 }
 .section-info > p {
-  letter-spacing: 0.2px;
-  margin-top: 2em;
+  letter-spacing: 0.5px;
+  margin-top: 2.5em;
 }
 .section-img {
   width: 50rem;
