@@ -7,7 +7,7 @@
   padding: 0 8rem;
   height: 100%;
   gap: 4em;
-  padding: 6em;
+  padding: 8em 10em 6em 6em;
 }
 
 .section-content {
@@ -16,23 +16,25 @@
 }
 .section-title {
   color: var(--accent-clr);
-  font-weight: 500;
+  font-weight: 600;
   font-size: var(--fs-large-1);
 }
 
 .section-subtitle {
   font-size: var(--fs-small);
-  letter-spacing: .8px;
+  color: var(--primary-clr-1);
+  letter-spacing: 1px;
   font-weight: 500;
   background: var(--non-accent-clr);
   max-width: max-content;
   padding: 0.6em 1em;
-  margin-top: 1em;
+  margin-top: 1.5em;
+  transform: translateX(-5%);
 }
 .section-info {
   font-size: var(--fs-small-1);
   font-weight: 300;
-  color: var(--subtitle-clr);
+  color: var(--primary-clr-1);
   line-height: 165%;
 }
 .section-info > p {
@@ -40,7 +42,7 @@
   margin-top: 2.5em;
 }
 .section-img {
-  width: 50rem;
+  width: 48rem;
   height: 100%;
   overflow: hidden;
   border-radius: 1rem;
@@ -48,7 +50,7 @@
   /* max-width: 80%; */
 }
 .section-img > img {
-  height: 100%;
+  height: 95%;
   object-fit: cover;
   pointer-events: none;
 }

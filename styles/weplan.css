@@ -1,0 +1,49 @@
+.weplan-section > div {
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  font-family: var(--ff-body);
+}
+.weplan-section__title {
+  color: var(--accent-clr);
+  font-size: var(--fs-normal-1);
+}
+.img-wrapper {
+  position: relative;
+  width: 50%;
+  margin: 0;
+}
+.img-text p {
+  position: absolute;
+  font-size: var(--fs-vsmall);
+  color: var(--accent-clr);
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+.img-text .text-1 {
+  top: 34%;
+  left: 32.5%;
+  transform: rotate(-45deg);
+}
+.img-text .text-2 {
+  top: 34%;
+  right: 34%;
+  transform: rotate(45deg);
+}
+.img-text .text-3 {
+  top: 44.5%;
+  left: 39.8%;
+  transform: rotate(-54deg);
+  font-size: 0.8rem;
+}
+.img-text .text-4 {
+  top: 44.5%;
+  right: 39.8%;
+  transform: rotate(54deg);
+}
+.img-text .text-5 {
+  bottom: 44.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}

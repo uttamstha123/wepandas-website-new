@@ -1,10 +1,12 @@
 :root {
   /* color pallate for dark mode*/
   --primary-clr: #151515;
+  --primary-clr-1: #313131;
   --secondary-clr: #6f6f6f;
   --tertiary-clr: #3f3f3f;
-  --subtitle-clr: #0d0d0d;
-  --link-clr: #32a85d;
+  --main-clr: #0d0d0d;
+  --link-clr: #32A85D;
+  --secondary-link-clr: #9c9c9c;
   --ctn-clr: #212121;
   --bg-clr: #fff9f2;
   --accent-clr: #32a85d;
@@ -25,9 +27,10 @@
         - max : if viewport is very larger the maximum it will go to max value
        */
 
+  --fs-vsmall: clamp(0.8rem, .9rem, 0.9vw);
   /* Small font size */
   --fs-small: clamp(1rem, 1.25rem, 1.05vw);
-  --fs-small-1: clamp(1.2rem, 1.35rem, 1.1vw);
+  --fs-small-1: clamp(1.33rem, 1.33rem, 1.1vw);
 
   /* Normal font size */
   --fs-normal-0: clamp(1.2rem, 1.4rem, 1.2vw);
@@ -53,25 +56,6 @@ body {
   margin: 0;
 }
 /* 
-    *******
-    Hide Scrollbars
-    *******
-    */
-body::-webkit-scrollbar {
-  width: 10px;
-}
-body {
-  scrollbar-width: thin;
-  scrollbar-color: #000 #000;
-}
-body::-webkit-scrollbar-track {
-  background: #000;
-}
-body::-webkit-scrollbar-thumb {
-  background-color: #000;
-}
-
-/* 
     ******
     Typography
     ******
@@ -82,6 +66,7 @@ img {
 }
 a {
   font-size: 100%;
+  font-weight: inherit;
   color: inherit;
   text-decoration: none;
   letter-spacing: inherit;
@@ -93,9 +78,9 @@ h1,
 h2,
 h3,
 h4 {
+  font-size: 100%;
   font-weight: inherit;
 }
-
 /*
     ******
     Home Page - Header
@@ -124,10 +109,11 @@ h4 {
 }
 .logo {
   text-transform: uppercase;
-  font-size: var(--fs-normal-0);
-  font-family: var(--ff-body);
-  font-weight: 300;
-  letter-spacing: .8px;
+  font-size: var(--fs-normal-1);
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: var(--primary-clr-1);
 }
 .nav__links {
   display: flex;
@@ -143,18 +129,18 @@ h4 {
 .nav__links li {
   font-family: var(--ff-primary);
   font-size: var(--fs-small-1);
+  color: var(--primary-clr-1);
   font-weight: 400;
-  color: var(--primary-clr);
   transition: all 0.15s;
   padding-bottom: 0.25em;
   cursor: pointer;
   position: relative;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.1px;
 }
 .nav__links li:hover {
   color: var(--link-clr);
 }
-
+/* 
 .nav__links li:hover::after {
   content: "";
   position: absolute;
@@ -164,14 +150,15 @@ h4 {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 .nav__social {
   max-width: 10rem;
+  margin-right: 2em;
 }
 .nav__social ul {
   display: flex;
   align-items: center;
-  gap: 1.5em;
+  gap: 2em;
 }
 
 /*
@@ -202,7 +189,8 @@ h4 {
 }
 
 .img-wrapper {
-  max-width: 50%;
+  max-width: 45%;
+  margin: 0 auto;
 }
 /*
     *******
@@ -216,7 +204,11 @@ h4 {
 .active-link {
   color: var(--link-clr);
 }
-
+.inactive-link {
+  color: var(--secondary-link-clr);
+  font-weight: 200;
+}
+/* 
 .active-link::after {
   content: "";
   position: absolute;
@@ -226,7 +218,7 @@ h4 {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 /* 
     ******
     Utilities Class

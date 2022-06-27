@@ -78,3 +78,10 @@
   font-weight: 500;
   font-style: italic;
 }
+
+@font-face {
+  font-family: Helvetica Now Display;
+  src: url("../assets/fonts/HelveticaDisplay/HelveticaNowDisplay-ExtraBold.otf");
+  font-weight: 600;
+  font-style: normal;
+}
