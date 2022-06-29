@@ -5,7 +5,7 @@
   --secondary-clr: #6f6f6f;
   --tertiary-clr: #3f3f3f;
   --main-clr: #0d0d0d;
-  --link-clr: #32A85D;
+  --link-clr: #32a85d;
   --secondary-link-clr: #9c9c9c;
   --ctn-clr: #212121;
   --bg-clr: #fff9f2;
@@ -27,17 +27,20 @@
         - max : if viewport is very larger the maximum it will go to max value
        */
 
-  --fs-vsmall: clamp(0.8rem, .9rem, 0.9vw);
+  --fs-vsmall: clamp(0.8rem, 0.9rem, 0.9vw);
   /* Small font size */
   --fs-small: clamp(1rem, 1.25rem, 1.05vw);
   --fs-small-1: clamp(1.33rem, 1.33rem, 1.1vw);
 
   /* Normal font size */
   --fs-normal-0: clamp(1.2rem, 1.4rem, 1.2vw);
-  --fs-normal-1: clamp(1.2rem, 1.6rem, 1.4vw);
+  --fs-normal-1: clamp(1.2rem, 1.65rem, 1.4vw);
+  --fs-normal-2: clamp(1.4rem, 1.8rem, 1.5vw);
 
+  --fs-medium-0: clamp(2rem, 2.2rem, 1.2vw);
+  --fs-medium-1: clamp(2.2rem, 2.4rem, 1.3vw);
   /* Larger font size */
-  --fs-large: clamp(2.2rem, 3.8rem, 3.2vw);
+  --fs-large: clamp(2.2rem, 4rem, 3.2vw);
   --fs-large-0: clamp(2.5rem, 4.2rem, 3.6vw);
   --fs-large-1: clamp(3.5rem, 5rem, 4vw);
 }

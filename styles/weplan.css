@@ -1,3 +1,6 @@
+.weplan-section {
+  position: relative;
+}
 .weplan-section > div {
   align-items: center;
   justify-content: center;
@@ -20,6 +23,8 @@
   font-weight: 300;
   letter-spacing: 0.5px;
   cursor: pointer;
+  z-index: 100;
+  transition: all 0.5s;
 }
 .img-text .text-1 {
   top: 34%;
@@ -47,3 +52,93 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+/* 
+*******
+  Model card design
+*******
+ */
+.weplan-article {
+  position: absolute;
+  z-index: 1;
+  background: var(--accent-clr);
+  color: var(--bg-clr);
+  width: 85%;
+  height: 90%;
+  border-radius: 1rem;
+  padding: 6rem 0 0 6rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: space-between;
+
+  /* opacity: 0;
+  pointer-events: none; */
+  transition: all 0.2s;
+}
+
+.close-icon {
+  position: absolute;
+  right: 3%;
+  top: 5%;
+  cursor: pointer;
+}
+.weplan-article--left {
+  width: 60%;
+}
+
+.weplan-article .weplan-title {
+  font-family: var(--ff-body);
+  font-weight: 400;
+  opacity: 0.5;
+  font-size: var(--fs-large);
+  display: inline-block;
+}
+#weplan-title-select {
+  font-weight: 400;
+  font-family: var(--ff-body);
+  font-size: var(--fs-medium-1);
+  margin-left: 0.5em;
+  color: var(--bg-clr);
+  opacity: 1;
+  pointer-events: none;
+
+}
+.weplan-description {
+  padding-top: 3em;
+  padding-left: 2em;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-normal-1);
+  font-weight: 400;
+  line-height: 150%;
+}
+.weplan-info:not(:last-child) {
+  margin-bottom: 2em;
+}
+.weplan-description .info {
+  font-weight: 100;
+  opacity: 0.7;
+  letter-spacing: 0.4px;
+}
+.weplan-article--right {
+  width: 30%;
+  /* border: 2px solid; */
+  display: grid;
+  place-items: center;
+  background-image: url("../assets/images/weplan-images/CANVAS\ 1.png");
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: 100% center;
+}
+.hide-article {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.animateText {
+  transform: rotate(0) !important;
+  top: 16.5% !important;
+  left: -10% !important;
+}
+
+

@@ -57,21 +57,102 @@
         </nav>
       </header>
       <section class="weplan-section">
+        <article class="weplan-article hide-article flex">
+          <div class="close-icon">
+            <img src="../assets/images/weplan-images/close-icon.svg" alt="" />
+          </div>
+          <div class="weplan-article--left">
+            <h1 class="weplan-title">WePlan</h1>
+            <span id="weplan-title-select"></span>
+            <div class="weplan-description">
+              <div class="weplan-info">
+                <h2 class="weplan-subtitle">
+                  Lo-Fi Music/Mix-Tapes on Spotify
+                </h2>
+                <p class="info">
+                  An NFT marketplace built in partnership with Magic Eden,
+                  Solana's #1 marketplace, where Okay Bears holders will buy and
+                  sell Okay Bears with member-only perks.
+                </p>
+              </div>
+              <div class="weplan-info">
+                Digital Wallpapers for PC, MAC, Android, IOS
+                <h2 class="weplan-subtitle"></h2>
+                <p class="info">
+                  Holder-only access to exclusive merch through seamless
+                  integration of Web 3 and Shopify's robust e-commerce platform.
+                </p>
+              </div>
+              <div class="weplan-info">
+                WeStore
+                <h2 class="weplan-subtitle"></h2>
+                <p class="info">
+                  Real-life activations through flash pop-up stores in cities
+                  worldwide and leading tech and crypto conferences bring
+                  holders together for memorable brand experiences.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="weplan-article--right">
+            <!-- <img src="../assets/images/weplan-images/CANVAS 1.png" alt="" /> -->
+          </div>
+        </article>
         <div class="flex">
           <h2 class="weplan-section__title">A Brand</h2>
           <div class="img-wrapper">
-            <div class="img-text">
+            <div id="weplan-text" class="img-text">
               <p class="text-1">Expansion</p>
               <p class="text-2">Art</p>
               <p class="text-3">Innovation</p>
               <p class="text-4">Lifestyle</p>
               <p class="text-5">Community</p>
             </div>
-            <img src="../assets/images/weplan-min.png" alt="" />
+            <img src="../assets/images/weplan.png" alt="" />
           </div>
           <h2 class="weplan-section__title">that builds.</h2>
         </div>
       </section>
     </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+      integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      const close = document.querySelector(".close-icon");
+      const cardArticle = document.querySelector(".weplan-article");
+
+      // close card
+      close.addEventListener("click", () => {
+        cardArticle.classList.toggle("hide-article");
+
+        const selectedText = document.querySelectorAll("#weplan-title-select");
+
+        console.log(selectedText[1]);
+        selectedText[1].classList.toggle("animateText");
+        selectedText[1].setAttribute("id", "");
+      });
+
+      // click animation
+      const wePlan = document.querySelectorAll("#weplan-text p");
+
+      function animateText(e) {
+        let element = e.target;
+
+        const selectedText = document.querySelector("#weplan-title-select");
+
+        element.classList.toggle("animateText");
+       
+        element.setAttribute("id", "weplan-title-select");
+        cardArticle.classList.toggle("hide-article");
+      }
+
+      // trigger event onclick
+      wePlan.forEach((elem) => {
+        elem.addEventListener("click", animateText);
+      });
+    </script>
   </body>
 </html>
