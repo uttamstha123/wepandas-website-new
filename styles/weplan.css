@@ -26,28 +26,28 @@
   z-index: 100;
   transition: all 0.5s;
 }
-.img-text .text-1 {
+.text-1 {
   top: 34%;
   left: 32.5%;
   transform: rotate(-45deg);
 }
-.img-text .text-2 {
+.text-2 {
   top: 34%;
   right: 34%;
   transform: rotate(45deg);
 }
-.img-text .text-3 {
+.text-3 {
   top: 44.5%;
   left: 39.8%;
   transform: rotate(-54deg);
   font-size: 0.8rem;
 }
-.img-text .text-4 {
+.text-4 {
   top: 44.5%;
   right: 39.8%;
   transform: rotate(54deg);
 }
-.img-text .text-5 {
+.text-5 {
   bottom: 44.5%;
   left: 50%;
   transform: translateX(-50%);
@@ -66,7 +66,7 @@
   width: 85%;
   height: 90%;
   border-radius: 1rem;
-  padding: 6rem 0 0 6rem;
+  padding: 6rem 6rem 0 6rem;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -82,6 +82,7 @@
   right: 3%;
   top: 5%;
   cursor: pointer;
+  z-index: 1;
 }
 .weplan-article--left {
   width: 60%;
@@ -95,6 +96,7 @@
   display: inline-block;
 }
 #weplan-title-select {
+  position: absolute;
   font-weight: 400;
   font-family: var(--ff-body);
   font-size: var(--fs-medium-1);
@@ -102,7 +104,6 @@
   color: var(--bg-clr);
   opacity: 1;
   pointer-events: none;
-
 }
 .weplan-description {
   padding-top: 3em;
@@ -121,24 +122,62 @@
   letter-spacing: 0.4px;
 }
 .weplan-article--right {
-  width: 30%;
+  width: 60%;
+  height: 100%;
+  position: absolute;
   /* border: 2px solid; */
-  display: grid;
-  place-items: center;
-  background-image: url("../assets/images/weplan-images/CANVAS\ 1.png");
-  background-repeat: no-repeat;
-  background-size: 130%;
+  background-repeat: no-repeat !important;
+}
+
+/* Setting background position of all images specifically */
+#bg-expansion {
+  /* expansion */
+  background-image: url(../assets/images/weplan-images/expansion.png);
+  background-size: 100%;
+  background-position: top;
+  right: 0%;
+  bottom: 0%;
+}
+#bg-art {
+  /* art */
+  background-image: url(../assets/images/weplan-images/art.png);
+  background-size: 70%;
+  background-position: right;
+  right: 0%;
+  bottom: 0%;
+}
+#bg-innovation {
+  /* innovation */
+  background-image: url(../assets/images/weplan-images/innovation.svg);
+  background-position: right center;
+  position: absolute;
+  top: 0;
+  right: 5%;
+}
+#bg-lifestyle {
+  /* lifestyle */
+  background-image: url(../assets/images/weplan-images/lifestyle.png);
+  background-size: 80%;
+  top: 0;
+  right: 0;
   background-position: 100% center;
 }
+#bg-community {
+  /* community */
+  background-image: url(../assets/images/weplan-images/community.png);
+  background-size: 70%;
+  top: 0;
+  right: 0;
+  background-position: 100% center;
+}
+
 .hide-article {
   opacity: 0;
   pointer-events: none;
 }
 
 .animateText {
-  transform: rotate(0) !important;
-  top: 16.5% !important;
-  left: -10% !important;
+  top: 16.5%;
+  left: -10%;
+  transform: rotate(0);
 }
-
-
