@@ -33,22 +33,22 @@
 }
 .text-2 {
   top: 34%;
-  right: 34%;
+  left: 63.5%;
   transform: rotate(45deg);
 }
 .text-3 {
   top: 44.5%;
-  left: 39.8%;
+  left: 39.5%;
   transform: rotate(-54deg);
   font-size: 0.8rem;
 }
 .text-4 {
   top: 44.5%;
-  right: 39.8%;
+  left: 54.4%;
   transform: rotate(54deg);
 }
 .text-5 {
-  bottom: 44.5%;
+  top: 53.6%;
   left: 50%;
   transform: translateX(-50%);
 }
