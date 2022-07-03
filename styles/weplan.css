@@ -142,7 +142,7 @@
 #bg-art {
   /* art */
   background-image: url(../assets/images/weplan-images/art.png);
-  background-size: 70%;
+  background-size: 65%;
   background-position: right;
   right: 0%;
   bottom: 0%;
@@ -178,7 +178,7 @@
 }
 
 .animateText {
-  top: 16.5%;
-  left: -10%;
+  top: 16.4%;
+  left: -12%;
   transform: rotate(0);
 }
